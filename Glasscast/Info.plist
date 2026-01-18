@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Location Permission (REQUIRED for CLLocationManager) -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Show local weather for your area</string>
+    
+    <!-- Optional: Always location (background) -->
+    <!-- <key>NSLocationAlwaysAndWhenInUseUsageDescription</key> -->
+    <!-- <string>Show weather updates even when app is closed</string> -->
+    
+    <!-- Keep other existing keys like CFBundleName, etc. -->
+</dict>
+</plist>
+

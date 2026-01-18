@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Property List.plist
+   Glasscast
+
+   Created by Akshay Gandal on 18/01/26.
+   Copyright (c) 2026 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>OPENWEATHER_API_KEY</key>
+    <string>74aefa0062b429cd48b29c29fad18b25</string>
+    <key>SUPABASE_ANON_KEY</key>
+    <string>sb_publishable_0LMbs7DxOxCwxyuhGwH1nA_3b49hs1t</string>
+    <key>SUPABASE_URL</key>
+    <string>https://tjhfcdfbjkrcbfosapta.supabase.co</string>
+</dict>
+</plist>
+
+
