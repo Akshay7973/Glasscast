@@ -60,7 +60,7 @@ struct HomeView: View {
                     .padding()
                 }
                 .refreshable {
-                    await refreshWeather()
+                    await viewModel.refresh()
                 }
             }
             .navigationTitle(viewModel.selectedCity?.cityName ?? "Weather")
@@ -73,8 +73,9 @@ struct HomeView: View {
                     }
                 }
             }
-            .onChange(of: locationService.authorizationStatus) { newStatus in
-                if newStatus == .authorizedWhenInUse || newStatus == .authorizedAlways {
+            .onChange(of: locationService.authorizationStatus) {
+                if locationService.authorizationStatus == .authorizedWhenInUse ||
+                   locationService.authorizationStatus == .authorizedAlways {
                     Task {
                         await fetchWeatherForCurrentLocation()
                     }

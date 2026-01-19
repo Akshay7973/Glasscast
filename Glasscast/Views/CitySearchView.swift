@@ -57,7 +57,7 @@ struct CitySearchView: View {
                                         Task {
                                             await viewModel.toggleFavorite(city)
                                         }
-                                    } onDelete: <#() -> Void#>
+                                    }
                                     .padding(.horizontal)
                                 }
                             }

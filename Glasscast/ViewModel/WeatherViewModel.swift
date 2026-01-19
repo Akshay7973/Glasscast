@@ -61,10 +61,12 @@ final class WeatherViewModel: ObservableObject {
     }
     
     func refresh() async {
+        errorMessage = nil  // Clear prior errors
         guard let city = selectedCity else {
             await fetchWeatherForCurrentLocation()
             return
         }
         await fetchWeather(lat: city.lat, lon: city.lon)
     }
+
 }
